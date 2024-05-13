@@ -40,7 +40,7 @@ function Stopwatch(){
         <div>
             <h1>Stopwatch</h1>
             <p>Time: {formatTime(time)} </p>
-            { time === 0 ? <button onClick={handleStart}>Start</button> :
+            { !timerOn ? <button onClick={handleStart}>Start</button> :
             <button onClick={handleStop}>Stop</button>}
             <button onClick={handleReset}>Reset</button>
         </div>
